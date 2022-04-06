@@ -251,7 +251,8 @@ Comme l'image est sortie du flux grâce à la propriété de positionnement abso
 
 .offers__title {
   font-size: 40px;
-  margin-right: 50%;
+  width: 50%;
+  margin-bottom: 25px;
 }
 
 .offers__title strong {
@@ -260,7 +261,7 @@ Comme l'image est sortie du flux grâce à la propriété de positionnement abso
 
 .offers__introduction {
   background-color: #fff3fc;
-  padding: 20px;
+  padding: 10px 20px;
   margin-bottom: 50px;
   border-radius: 10px;
   font-size: 18px;
@@ -304,7 +305,7 @@ Comme l'image est sortie du flux grâce à la propriété de positionnement abso
 }
 
 .card-offer__description {
-  padding: 20px 5px 5px;
+  padding: 20px 10px;
 }
 
 /* End : Card-offer */
