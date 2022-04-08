@@ -1,0 +1,61 @@
+/*
+*
+* Offers
+*
+*/
+
+.offers {
+  padding: 100px 0;
+}
+
+.offers__title {
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.offers__introduction {
+  background-color: #fff3fc;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-pink);
+}
+
+.offers__introduction span {
+  font-size: 25px;
+}
+
+.offers__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Start : Card-offer */
+
+.card-offer {
+  border-radius: 10px;
+  width: 23%;
+  overflow: hidden;
+  box-shadow: 0 4px 36px #3029290f;
+}
+
+.card-offer__container-title {
+  background-color: #ebf5ff;
+  color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-offer__icon {
+  width: 45px;
+  margin-right: 10px;
+}
+
+.card-offer__description {
+  padding: 20px 10px;
+}
+
+/* End : Card-offer */

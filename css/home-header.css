@@ -1,0 +1,72 @@
+/*
+*
+Header
+*
+*/
+
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header__logo {
+  width: 100px;
+}
+
+.header__link {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: auto 0.5rem;
+  cursor: pointer;
+  transition: all 0.12s ease-out;
+}
+
+.header__link--blue {
+  background-color: var(--color-blue);
+  color: var(--color-greyLight);
+}
+
+.header__link--grey {
+  background-color: var(--color-greyLight);
+  color: var(--color-blue);
+}
+
+.header__link--blue:hover,
+.header__link--grey:hover {
+  transform: scale(1.1);
+}
+
+.header__link--blue:hover {
+  opacity: 0.7;
+}
+
+.header__link--blue a {
+  color: var(--color-greyLight);
+}
+
+.header__link--grey a {
+  color: var(--color-blue);
+}
+
+.header__link--grey a:hover {
+  color: var(--color-middleBlue);
+}
+/* Pour ce projet, on a décidé de ranger les media queries dans la section appropriée, en fonction de ce qu'il modifie. Cela implique d'écrire plusieurs fois des médias queries pour la même taille d'écran */
+
+/* 800px = tablette portrait */
+@media screen and (max-width: 800px) {
+  .header__link--blue {
+    display: none;
+  }
+}
