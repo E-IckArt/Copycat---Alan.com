@@ -215,25 +215,30 @@ Comme l'image est sortie du flux grâce à la propriété de positionnement abso
 
 /* 800px = tablette portrait */
 @media screen and (max-width: 800px) {
+  .cover__flux {
+    flex-direction: column;
+  }
+
+  .flux {
+    width: 80%;
+  }
+
   .cover__marmott {
     display: none;
   }
 
-  .cover__flux {
-    flex-direction: column;
+  .cover__container-texts {
+    width: 80%;
+    margin: auto;
   }
+
+  /* BUGIX - Le screen ecran a disparu (caché derrière le screen tablette ?)*/
 }
 
 /* 450px = mobile */
 @media screen and (max-width: 450px) {
-  .cover__marmott {
-    display: none;
-  }
-
-  .cover__container-images {
-    display: none;
-  }
-
+  .cover__marmott,
+  .cover__container-images,
   .cover__video {
     display: none;
   }
