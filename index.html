@@ -51,7 +51,7 @@
         <div class="cover__flux flux">
           <div class="cover__container-texts">
             <h1 class="cover__title">L’assurance santé qui fait simple.</h1>
-            <p class="cover__introduction">
+            <p class="cover__introduction t-text">
               14 000 entreprises de toutes tailles, des start-ups aux grandes
               entreprises, et des milliers d’indépendants font confiance à Alan
               pour leur protection santé.
@@ -91,10 +91,10 @@
       <!-- Start : Second section -->
       <section class="offers flux">
         
-          <h2 class="offers__title">Nos offres pensées <strong> pour vous, avec vous</strong></h2>
+          <h2 class="offers__title t-title">Nos offres pensées <strong> pour vous, avec vous</strong></h2>
           <p class="offers__introduction">
             <span>👋</span>Salarié(e) d'une entreprise qui a rejoint Alan ?
-            <a href="#">Découvrez comment vous inscrire</a>
+            <a class="t-link" href="#">Découvrez comment vous inscrire</a>
           </p>
 
           <ul class="offers__list">
@@ -154,6 +154,65 @@
           </ul>
       </section>
       <!-- End : Second section -->
+
+      <!-- Start : Third section -->
+      <section class="services flux">
+        <h2 class="services__title t-title">Le meilleur de la technologie et de l'humain <strong>pour votre assurance santé</strong></h2>
+        <div class="bloc-service">
+          <div class="bloc-service__container-texts ">
+            <h3 class="bloc-service__title">Des remboursements éclairs, <span>au bout des doigts</span></h3>
+            <p class="bloc-service__description t-text">Envoyez vos factures depuis votre smartphone, <strong>recevez vos remboursements via virements instantanés</strong>  et suivez le détail depuis votre app mobile.</p>
+            <a href="#" class="bloc-service__link t-link t-text">Découvrir les offres pour en savoir plus</a>
+          </div>
+          <img class="bloc-service__image" src="images/remboursement.png" alt="">
+        </div>
+
+        <div class="bloc-service">
+          <div class="bloc-service__container-texts">
+            <h3 class="bloc-service__title">Une interface complète, <span>facile à piloter</span></h3>
+            <p class="bloc-service__description t-text"><span>Gérez les arrivées et départs de vos salariés,</span>  les dispenses et même les arrêts de travail en quelques clics et <span>respectez vos obligations</span> en toute tranquilité.</p>
+            <p class="bloc-service__description t-text"><span>Indépendants ?</span>  Vos factures et attestation Loi Madelin sont disponibles depuis votre espace.</p>
+            <a href="#" class="bloc-service__link t-link t-text">Découvrir les offres pour en savoir plus</a>
+          </div>
+          <img class="bloc-service__image" src="images/interface simple.png" alt="">
+        </div>
+
+        <div class="bloc-service">
+          <div class="bloc-service__container-texts">
+            <h3 class="bloc-service__title">Un médecin <span>à portée de main</span></h3>
+            <p class="bloc-service__description t-text"><span>Echangez gratuitement avec un généraliste</span> depuis notre messagerie sécurisée ou par téléconsultation vidéo, via votre app mobile.</p>
+            <p class="bloc-service__description t-text">Besoin d’une consultation physique ?<span> Trouvez un médecin ou un labo</span>, bien remboursé, à proximité, avec Alan Map.</p>
+            <a href="#" class="bloc-service__link t-link t-text">Découvrir les offres pour en savoir plus</a>
+          </div>
+          <img class="bloc-service__image" src="images/medecin2.png" alt="">
+        </div>
+
+        <div class="bloc-service">
+          <div class="bloc-service__container-texts">
+            <h3 class="bloc-service__title">Des garanties santé <span>adaptées et transparentes</span></h3>
+            <p class="bloc-service__description t-text"><span>Choisissez la couverture adaptée à votre situation</span> (besoins de santé, taille d’entreprise et secteur d’activité) et<span> profitez des médecines douces</span> ou encore de la méditation.</p>
+            <a href="#" class="bloc-service__link t-link t-text">Découvrir les offres</a>
+          </div>
+          <img class="bloc-service__image" src="images/meditation.jpg" alt="">
+        </div>
+      </section>
+      <!-- End : Third section -->
+
+      <!-- Start : Fourth section -->
+      <section class="quotes flux">
+        <h2 class="t-title">Il y a un <strong>avant et un après Alan</strong></h2>
+<!-- TODO - Bug Fix : la vidéo s'affiche dans la section cover car la position est absolute top : 0. Modifier la classe selon le principe DRY-->
+        <video
+          class="cover__video"
+          autoplay
+          loop
+          muted
+          description="Animation background de la page d'accueil"
+        >
+          <source src="videos\loop-video.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <!-- End : Fourth section -->
     </main>
 
     <script src="script.js"></script>

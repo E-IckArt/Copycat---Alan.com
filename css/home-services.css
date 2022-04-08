@@ -1,0 +1,50 @@
+/*
+*
+* Services
+*
+*/
+
+.services__title {
+  width: 75%;
+  margin-bottom: 50px;
+}
+
+.bloc-service {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.bloc-service:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.bloc-service__container-texts,
+.bloc-service__image {
+  width: 50%;
+}
+
+.bloc-service__title {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.bloc-service__title span {
+  color: var(--color-orange);
+}
+
+.bloc-service__description {
+  margin-bottom: 15px;
+}
+
+.bloc-service__description span {
+  font-weight: 800;
+}
+
+.bloc-service__image {
+  max-height: 400px;
+  width: auto;
+  max-width: 50%;
+  border-radius: 30px;
+}
