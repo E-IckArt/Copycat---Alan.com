@@ -67,3 +67,127 @@ Texts
   color: var(--color-blue);
   font-weight: 800;
 }
+
+/* Start - Section 4 Testimonies */
+
+.testimonies__container {
+  position: relative;
+}
+
+.testimonies__title {
+  margin-bottom: 50px;
+}
+
+.testimonies__video {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.testimonies__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-user {
+  width: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 52px 5px rgba(0, 0, 0, 0.16);
+  margin-bottom: 50px;
+}
+
+.card-user__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-user__avatar {
+  width: 100px;
+  height: 100px;
+  border: solid 3px var(--color-blueGreen);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.card-user__informations {
+  margin-left: 10px;
+}
+
+.card-user__name {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-user__job {
+  margin-bottom: 5px;
+}
+
+.card-user__key-points {
+  color: grey;
+}
+
+.card-user__quote {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.testimonies__apps {
+  padding-bottom: 50px;
+}
+
+.testimonies__apps-title {
+  width: 55%;
+  margin-bottom: 50px;
+}
+
+.testimonies__app-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.apps-grade__rating {
+  font-size: 2.5rem;
+  font-weight: 600;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.apps-grade__sources {
+  width: 55%;
+}
+
+.apps-comment {
+  width: 40%;
+}
+
+.apps-comment__blockquote {
+  position: relative;
+}
+
+.apps-comment__img {
+  position: relative;
+  right: 70px;
+}
+
+.apps-comment__quote {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--color-darkGrey);
+}
+
+.apps-comment__name {
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+/* Stop - Section 4 Testimonies */

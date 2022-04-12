@@ -199,18 +199,86 @@
       <!-- End : Third section -->
 
       <!-- Start : Fourth section -->
-      <section class="quotes flux">
-        <h2 class="t-title">Il y a un <strong>avant et un après Alan</strong></h2>
+      <section class="testimonies">
+        <h2 class="testimonies__title t-title flux">Il y a un <strong>avant et un après Alan</strong></h2>
 <!-- TODO - Bug Fix : la vidéo s'affiche dans la section cover car la position est absolute top : 0. Modifier la classe selon le principe DRY-->
-        <video
-          class="cover__video"
-          autoplay
-          loop
-          muted
-          description="Animation background de la page d'accueil"
-        >
-          <source src="videos\loop-video.mp4" type="video/mp4" />
+        <div class="testimonies__container">
+          <video class="testimonies__video" autoplay loop muted  description="Animation background de la page d'accueil">
+            <source src="videos/loop-video.mp4" type="video/mp4">
         </video>
+
+          <ul class="testimonies__list flux">
+            <li class="card-user">
+              <div class="card-user__top">
+                      <img class="card-user__avatar" src="images/joconde.jpg" alt="">
+                      <ul class="card-user__informations">
+                          <li class="card-user__name">Colombe</li>
+                          <li class="card-user__job">COO @ Hôtels en Ville</li>
+                          <li class="card-user__key-points">20 hôtels - CHR</li>
+                      </ul>
+                  </div>
+                  <p class="card-user__quote">
+                      On a adoré la simplicité : on demande quelque chose, on l’a ! Par rapport aux autres mutuelles, Alan est très proactif. On a eu l’impression qu’on partageait le même combat. Ça a été très rassurant pour nous d’être accompagnés par Alan pendant la crise.
+                  </p>
+                  <a class="t-link" href="#">Lire la suite</a>
+              </li>
+
+              <li class="card-user">
+                  <div class="card-user__top">
+                      <img class="card-user__avatar" src="images/joconde.jpg" alt="">
+                      <ul class="card-user__informations">
+                          <li class="card-user__name">Florie</li>
+                          <li class="card-user__job">DRH @ Meilleurs Agents</li>
+                          <li class="card-user__key-points">300 salariés - Syntec</li>
+                      </ul>
+                  </div>
+                  <p class="card-user__quote">
+                      Dans le quotidien des collaborateurs, Alan a permis de démystifier l’assurance santé, de se réapproprier leur santé. Tout ce sur quoi Alan les aide, c’est du temps gagné pour l’équipe RH.
+                  </p>
+                  <a class="t-link" href="#">Voir le témoignage vidéo</a>
+              </li>
+
+              <li class="card-user">
+                  <div class="card-user__top">
+                      <img class="card-user__avatar" src="images/joconde.jpg" alt="">
+                      <ul class="card-user__informations">
+                          <li class="card-user__name">Christophe</li>
+                          <li class="card-user__job">Indépendant</li>
+                      </ul>
+                  </div>
+                  <p class="card-user__quote">
+                      Première mutuelle en tant que TNS (depuis 6 mois) et j’avoue être bluffé par le rapport qualité prix, le niveau de service, l'expérience utilisateur et le petit effet que suscite ma carte lorsque je la présente chez le pharmacien ! L’appli est aussi très
+                      réussie ! Bravo Alan.
+                  </p>
+              </li>
+          </ul>
+
+          <div class="testimonies__apps flux">
+
+              <h3 class="testimonies__apps-title t-title">272 880 membres font confiance à Alan pour leur santé</h3>
+
+              <div class="testimonies__app-container">
+                <div class="apps-grade">
+                  <p class="apps-grade__rating">4,5 <img src="images/stars.svg" alt=""></p>
+                  <p class="apps-grade__sources">selon nos utilisateurs sur l’<a class="t-link" href="#">App Store</a> et le <a class="t-link" href="#">Play Store</a></p>
+                </div>
+
+                <figure class="apps-comment">
+                    <blockquote class="apps-comment__blockquote">
+                      <img class="apps-comment__img" src="images/quotes.svg" alt="">
+                        <p class="apps-comment__quote">
+                            Les interfaces de leur espace en ligne et application sont vraiment top. Et pour les échanges, là ou j’ai galéré des mois avec mon ancienne mutuelle (rattachement famille, télétransmission), tout a été réglé en quelques heures avec Alan. <br> Je recommande
+                            !
+                        </p>
+                    </blockquote>
+                    <figcaption class="apps-comment__name">François, chez Alan depuis janvier 2020</figcaption>
+                </figure>
+                
+              </div>
+          </div>
+
+          
+        </div>
       </section>
       <!-- End : Fourth section -->
     </main>
