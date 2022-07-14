@@ -5,116 +5,154 @@ Cover
 */
 
 .cover {
-  background-color: var(--color-blueGreen);
-  padding-top: 120px;
-  padding-bottom: 30px;
-  position: relative;
+    background-color: var(--color-blueGreen);
+    padding-top: 120px;
+    padding-bottom: 30px;
+    position: relative;
 }
 .cover__flux {
-  display: flex;
-  position: relative;
-  z-index: 1;
+    display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__container-texts,
 .cover__container-images {
-  width: 50%;
+    width: 50%;
 }
 
 .cover__container-texts {
-  padding-right: 120px;
-  position: relative;
+    padding-right: 120px;
+    position: relative;
 }
 
 .cover__title {
-  font-size: 60px;
-  font-weight: 800;
-  margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 25px;
 }
 
 .cover__introduction {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .cover__marmott {
-  width: 75%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  position: relative;
-  bottom: -30px;
-  /* position: absolute;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    bottom: -30px;
+    /* position: absolute;
     bottom: -30px;
     left: 12px; */
 }
 
 .cover__container-images {
-  position: relative;
+    position: relative;
 }
 .cover__image {
-  position: absolute;
-  border-radius: 10px;
-  transition: all 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Image desktop */
 .cover__image:first-child {
-  bottom: 0;
-  right: 0;
-  width: 95%;
-  height: auto;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: auto;
 }
 
 /* Pour cumuler les différentes attributs de transform il faut les mettres dans une seule déclaration 'transform'.
   Comme l'image est sortie du flux grâce à la propriété de positionnement absolute, la transformation n'affecte pas le reste de la page : le texte n'est pas poussé.*/
 .cover__image:first-child:hover {
-  /*Modification du point d'ancrage de l'animation*/
-  /* transform-origin: bottom right; */
+    /*Modification du point d'ancrage de l'animation*/
+    /* transform-origin: bottom right; */
 
-  /* Au survol, aggrandissement de l'image, rotation et décalage à droite */
-  transform: scale(1.1) rotate(5deg) translateX(50px);
+    /* Au survol, aggrandissement de l'image, rotation et décalage à droite */
+    transform: scale(1.1) rotate(5deg) translateX(50px);
 }
 
 /* Image mobile */
 .cover__image:last-child {
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 85%;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 85%;
 }
 
 .cover__image:last-child:hover {
-  transform: scale(1.2) rotate(-3deg) translateX(-10px);
+    transform: scale(1.2) rotate(-3deg) translateX(-10px);
 }
 
 /* TODO - Cette video doit être utilisée 3 fois !!! Modifier la classe. Objectif DRY */
 
 .cover__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .cover__container-texts {
+        padding-right: 30%;
+        width: 100%;
+    }
+
+    .cover__container-images {
+        height: 450px;
+        width: 550px;
+        align-self: center;
+    }
 }
 
 /* 800px = tablette portrait */
 @media screen and (max-width: 800px) {
-  .cover__marmott {
-    display: none;
-  }
+    .cover__marmott {
+        display: none;
+    }
 
-  .cover__flux {
-    flex-direction: column;
-  }
+    .cover__flux {
+        flex-direction: column;
+    }
+
+    .cover__title {
+        font-size: 40px;
+    }
+
+    .cover__introduction {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cover__container-images,
+    .cover__image,
+    .cover__video {
+        display: none;
+    }
+    .cover__container-texts {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cover__title {
+        font-size: 20px;
+    }
 }
 
 /* 450px = mobile */
-@media screen and (max-width: 450px) {
-  .cover__marmott {
+/* @media screen and (max-width: 450px) {
+    .cover__marmott {
     display: none;
   }
 
@@ -125,4 +163,4 @@ Cover
   .cover__video {
     display: none;
   }
-}
+} */
