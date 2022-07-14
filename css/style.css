@@ -1,10 +1,10 @@
 /* Import CSS */
-@import '/css/home-header.css';
+@import 'home-header.css';
 
-@import '/css/home-cover.css';
-@import '/css/home-offers.css';
-@import '/css/home-services.css';
-@import '/css/home-testimonies.css';
+@import 'home-cover.css';
+@import 'home-offers.css';
+@import 'home-services.css';
+@import 'home-testimonies.css';
 
 /* Police personnalisée
 
