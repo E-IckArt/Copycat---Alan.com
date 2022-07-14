@@ -1,1 +1,13 @@
-.vscode
+# Vs Code settings
+.vscode/
+settings.json
+
+#Windows
+Thumbs.db
+
+#JetBrain
+.idea/
+
+# General
+log/
+*/log
